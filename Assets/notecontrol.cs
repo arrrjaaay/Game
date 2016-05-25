@@ -10,15 +10,15 @@ public class notecontrol : MonoBehaviour {
 	void Start () {
 	    if (gameObject.name == "Note1(Clone)")
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector3(0, -3.75f, 0);
+            GetComponent<Rigidbody2D>().velocity = new Vector3(0, -5.75f, 0);
         }
         if (gameObject.name == "Note2(Clone)")
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector3(0, -3.75f, 0);
+            GetComponent<Rigidbody2D>().velocity = new Vector3(0, -5.75f, 0);
         }
         if (gameObject.name == "Note3(Clone)")
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector3(0, -3.75f, 0);
+            GetComponent<Rigidbody2D>().velocity = new Vector3(0, -5.75f, 0);
         }
     }
 	
@@ -41,10 +41,7 @@ public class notecontrol : MonoBehaviour {
         }
     }
 
-    void OnTriggerEnter2D()
-    {
-        GetComponent<SpriteRenderer>().color = new Color(0, 255, 0);
-    }
+    
     void OnTriggerExit2D()
     {
         GetComponent<SpriteRenderer>().color = new Color(255, 0, 0);
